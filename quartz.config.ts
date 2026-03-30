@@ -24,7 +24,6 @@ const config: QuartzConfig = {
       ".processed",
       "ops",
       "memory",
-      "intake",
       "*.json",
       "*.yaml",
       "*.jsonl",
