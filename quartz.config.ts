@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "ko-KR",
-    baseUrl: "",
+    baseUrl: "dataofmen.github.io/think-tank-site",
     ignorePatterns: [
       "private",
       "templates",
