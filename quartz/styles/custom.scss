@@ -1,3 +1,34 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Fix text overflow in article content
+article {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+  p, li, span {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  // Fix long URLs and code blocks from overflowing
+  a, code {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+// Ensure center content area is properly constrained
+.center {
+  max-width: calc(100vw - 4rem);
+  overflow-x: hidden;
+}
+
+// Fix KaTeX math overflow
+.katex-display {
+  overflow-x: auto;
+  max-width: 100%;
+}
