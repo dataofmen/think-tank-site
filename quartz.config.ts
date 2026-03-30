@@ -8,16 +8,27 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Think Tank",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    analytics: null,
+    locale: "ko-KR",
+    baseUrl: "",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      ".inbox",
+      ".processing",
+      ".processed",
+      "ops",
+      "memory",
+      "archive",
+      "*.json",
+      "*.yaml",
+      "*.jsonl",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
